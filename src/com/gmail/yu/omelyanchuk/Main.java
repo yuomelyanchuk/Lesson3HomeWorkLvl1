@@ -27,7 +27,7 @@ public class Main {
 		int frontDoor;
 		if (a > 0 && a <= apartmentCount * floorCount * frontDoorCount) {
 			a=a-1;
-			frontDoor = (a) / (apartmentCount * floorCount);
+			frontDoor = a / (apartmentCount * floorCount);
 			floor = (a - frontDoor * floorCount * apartmentCount) / apartmentCount+1;
 			frontDoor += 1;
 			System.out.println("floor = " + floor + " frontDoor=" + frontDoor);
